@@ -1,0 +1,3 @@
+/home/sjw/mymuduo/build/CMakeFiles/edit_cache.dir
+/home/sjw/mymuduo/build/CMakeFiles/rebuild_cache.dir
+/home/sjw/mymuduo/build/CMakeFiles/mymuduo.dir
