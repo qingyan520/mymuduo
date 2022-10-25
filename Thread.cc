@@ -27,13 +27,17 @@ void Thread::setDefaultName(){
 void Thread::start(){
     //一个Thread记录的就是一个新线程的详细信息
     started_=true;
+
+    //semaphore信号量保证在start末尾出可以得到线程id
     sem_t sem;
     sem_init(&sem,false,0);
     thread_=std::shared_ptr<std::thread>(new std::thread([&](){
-            tid_=CurrentThread::tid();
-            sem_post(&sem);
-            func_();
+            tid_=CurrentThread::tid();           //得到线程id
+            sem_post(&sem);                      //信号量进行post
+            func_();                             //执行线程函数
           }));
+
+    //在这里必须保证得到了线程id
     sem_wait(&sem);
 }
 
