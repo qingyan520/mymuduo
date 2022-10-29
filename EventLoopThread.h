@@ -9,7 +9,7 @@ class EventLoop;
 class EventLoopThread{
   public:
     using ThreadInitCallback=std::function<void(EventLoop*)>;
-    EventLoopThread(const ThreadInitCallback &cb=ThreadInitCallback(),const string &name=string());
+    EventLoopThread(const ThreadInitCallback &cb=ThreadInitCallback(),const string &name=std::string());
     ~EventLoopThread();
     EventLoop*startLoop();
   private:

@@ -10,9 +10,12 @@ EpollPoller::EpollPoller(EventLoop*loop):Poller(loop),
   events_(kInitSize){
   if(epollfd_<0)
   {
+    //events_.resize(kInitSize);
     LOG(FATAL,"EPOLL_CREATE FAIL!");
     exit(0);
   }
+     std::cout<<"size="<<events_.size()<<std::endl;
+     
 }
 
 EpollPoller::~EpollPoller(){
@@ -29,6 +32,7 @@ void EpollPoller::updateChannel(Channel*channel){
     }
     channel->set_index(kAdded);
     update(EPOLL_CTL_ADD,channel);
+    LOG(INFO,"updateChannel:"+std::to_string(channel->fd())+"success!");
   }
   else{  //当前已经注册到epoll中了
     if(channel->isNoneEvent()){
@@ -79,11 +83,11 @@ Timestamp EpollPoller::poll(int timeOutMs,ChannelList*activeChanneList){
       }
     }
     else if(numEvents==0){
-      LOG(INFO,"epoll_wait nothing happend!");
+     // LOG(INFO,"epoll_wait nothing happend!");
     }    
     else{
       if(saveError!=ENOTTY){
-        LOG(WARING,"epoll_wait error!");
+       // LOG(WARING,"epoll_wait error!");
         errno=saveError;
       } 
     }

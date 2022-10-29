@@ -1,5 +1,6 @@
 #include"EventLoopThread.h"
 #include"EventLoop.h"
+#include"Log.h"
 EventLoopThread::EventLoopThread(const ThreadInitCallback&cb,const string&name):
   loop_(nullptr),
   exiting_(false),
@@ -27,6 +28,7 @@ EventLoop*EventLoopThread::startLoop(){
     }
     loop=loop_;
   }
+  LOG(INFO,"EventLoop has been created");
   return loop;
 
 }

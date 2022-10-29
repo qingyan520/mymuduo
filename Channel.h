@@ -1,7 +1,7 @@
 #pragma once 
 #include"nocopyable.h"
 #include"Timestamp.h"
-
+#include"Log.h"
 #include<memory>
 #include<functional>
 
@@ -23,8 +23,13 @@ class Channel{
     void setErrorCallback(EventCallback cb){errorCallback_=std::move(cb);}
     void setCloseCallback(EventCallback cb){closeCallback_=std::move(cb);}
 
+   
     //设置fd感兴趣的事件，注册到epoll上
-    void enableReading(){events_|=kReadEvent;update();}
+    void enableReading(){
+      events_|=kReadEvent;
+      update();
+      LOG(INFO,"enableReading:"+std::to_string(fd_));
+    }
     void disableReading(){events_&=~kReadEvent;update();}
     void enableWriting(){events_|=kWriteEvent;update();}
     void disableWriting(){events_&=~kWriteEvent;update();}
@@ -34,7 +39,7 @@ class Channel{
     bool isReading()const{return revents_&kReadEvent;}
     bool isWriting()const{return revents_&kWriteEvent;}
     bool isNoneEvent()const{return revents_==kNoneEvent;}
-    
+    constexpr
     //返回基础信息
     int fd()const{return fd_;}
     int events()const{return events_;}
@@ -42,6 +47,8 @@ class Channel{
     int index(){return index_;}
     void set_index(int idx){index_=idx;}
     EventLoop*owerLoop(){return loop_;}
+
+    //一个TcpConnection
     void tie(const std::shared_ptr<void>&sp){tied_=true;tie_=sp;}
     
     void remove();     //删除channel

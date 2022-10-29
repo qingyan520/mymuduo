@@ -1,0 +1,77 @@
+[
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Channel.o -c /home/sjw/mymuduo/Channel.cc",
+  "file": "/home/sjw/mymuduo/Channel.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoopThread.o -c /home/sjw/mymuduo/EventLoopThread.cc",
+  "file": "/home/sjw/mymuduo/EventLoopThread.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Acceptor.o -c /home/sjw/mymuduo/Acceptor.cc",
+  "file": "/home/sjw/mymuduo/Acceptor.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpConnection.o -c /home/sjw/mymuduo/TcpConnection.cc",
+  "file": "/home/sjw/mymuduo/TcpConnection.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Poller.o -c /home/sjw/mymuduo/Poller.cc",
+  "file": "/home/sjw/mymuduo/Poller.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Main.o -c /home/sjw/mymuduo/Main.cc",
+  "file": "/home/sjw/mymuduo/Main.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpServer.o -c /home/sjw/mymuduo/TcpServer.cc",
+  "file": "/home/sjw/mymuduo/TcpServer.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Socket.o -c /home/sjw/mymuduo/Socket.cc",
+  "file": "/home/sjw/mymuduo/Socket.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoop.o -c /home/sjw/mymuduo/EventLoop.cc",
+  "file": "/home/sjw/mymuduo/EventLoop.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/CurrentThread.o -c /home/sjw/mymuduo/CurrentThread.cc",
+  "file": "/home/sjw/mymuduo/CurrentThread.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoopThreadPool.o -c /home/sjw/mymuduo/EventLoopThreadPool.cc",
+  "file": "/home/sjw/mymuduo/EventLoopThreadPool.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/EpollPoller.o -c /home/sjw/mymuduo/EpollPoller.cc",
+  "file": "/home/sjw/mymuduo/EpollPoller.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/DefaultPoller.o -c /home/sjw/mymuduo/DefaultPoller.cc",
+  "file": "/home/sjw/mymuduo/DefaultPoller.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Thread.o -c /home/sjw/mymuduo/Thread.cc",
+  "file": "/home/sjw/mymuduo/Thread.cc"
+},
+{
+  "directory": "/home/sjw/mymuduo/build",
+  "command": "/opt/rh/devtoolset-7/root/usr/bin/g++   -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC   -o CMakeFiles/mymuduo.dir/Buffer.o -c /home/sjw/mymuduo/Buffer.cc",
+  "file": "/home/sjw/mymuduo/Buffer.cc"
+}
+]

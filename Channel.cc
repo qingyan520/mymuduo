@@ -70,8 +70,10 @@ void Channel::remove()
 {
   //add code..
   //loop_->removeChannel(this);
+  loop_->removeChannel(this);
 }
 
 void Channel::update(){
   //loop->_updateChannel(this);
+  loop_->updateChannel(this);
 }

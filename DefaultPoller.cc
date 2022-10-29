@@ -3,7 +3,7 @@
 #include"EpollPoller.h"
 class EventLoop;
  Poller*Poller::newDefaultPoller(EventLoop*loop){
-    if(getenv("DEFAULT_USE_POLL")!=nullptr)
+    if(getenv("DEFAULT_USE_POLL"))
     {
       return  nullptr;
     }

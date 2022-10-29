@@ -14,6 +14,6 @@ class EpollPoller:public Poller{
     void fillActiveChannelList(int numEvents,ChannelList*activeChanneList);
     int epollfd_;
     std::vector<struct epoll_event>events_;
-};
+};  
 
 
